@@ -1,0 +1,194 @@
+:root {
+    --main-background-color: #1C1C1C;
+    --secondary-color: #666666;
+    --active-el-color: #0099CC;
+    --text-color: #FFFFFF;
+}
+
+* {
+    font-family: Poppins;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--main-background-color);
+    padding-bottom: 115px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--main-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--active-el-color);
+    border-radius: 10px;
+    margin-right: 3px;
+}
+
+.my-portfolio-text {
+    margin: 0px 0 30px 30px;
+    font-size: 40px;
+}
+
+.nav-bar {
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    margin: 0 0 60px 0;
+    padding: 30px 0 10px 0;
+}
+
+.nav-bar-btns {
+    border-top: 4px solid var(--secondary-color);
+    height: 65px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 25px;
+}
+
+.nav-btn {
+    background-color: var(--main-background-color);
+    border: none;
+    font-size: 22px;
+    transition: 0.15s;
+}
+
+.nav-btn:hover {
+    font-size: 26px;
+    color: var(--active-el-color);
+}
+
+.active-btn {
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 0;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--active-el-color);
+    color: var(--active-el-color);
+    transition: font-size 0.15s;
+}
+
+.active-btn:hover {
+    font-size: 30px;
+    color: var(--active-el-color);
+}
+
+.section-info {
+    margin: 30px 150px 0 70px;
+}
+
+.section-name {
+    font-size: 45px;
+    color: var(--active-el-color);
+    margin-bottom: 70px;
+}
+
+.about-me-content {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    align-items: center;
+    column-gap: 150px;
+}
+
+.quote {
+    margin-bottom: 80px;
+    width: inherit;
+}
+
+.quote-symbol {
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+.section-quote {
+    font-style: italic;
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.quote-author {
+    text-align: right;
+    font-size: 23px;
+}
+
+.name-text,
+.cur-occupation {
+    text-decoration: underline;
+    text-decoration-color: var(--active-el-color); 
+    text-decoration-thickness: 3px;
+}
+
+.name-text {
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.cur-occupation {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.my-image {
+    width: 310px;
+    box-shadow: 15px -15px 30px var(--secondary-color);
+}
+
+.project-list > li,
+.education-list > li{
+    color: var(--active-el-color);
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.education-heading {
+    font-size: 32px;
+}
+
+
+.current-date {
+    text-decoration: underline;
+    text-decoration-color: var(--active-el-color);
+    text-decoration-thickness: 2px;
+    font-weight: bold;
+}
+
+.contact-symbol {
+    font-size: 32px;
+    color: var(--active-el-color);
+}
+
+.link {
+    text-decoration: none;
+    transition: font-size 0.15s;
+    display: block;
+}
+
+.link:hover {
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+}
+
+.link:active {
+    color: var(--secondary-color)
+}
+
+.section-description,
+.link {
+    margin: 0;
+    font-size: 24px;
+};
+
+.education-areas {
+    list-style-type: disc;
+}
+
+.education-areas > li {
+    font-size: 22px;
+}
