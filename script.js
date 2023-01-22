@@ -38,20 +38,24 @@ navBtns.forEach((btn, _, btnList) => {
               case "Education":
                 sectionHTML = `
                   <ul class="education-list">
-                    <li>
+                    <li class="formal-ed">
                       <h2 class="education-heading">Formal Education:</h2>
                         <ul class="education-areas">
                           <li class="section-description">School: &laquo;Usum&raquo; Private School</li>
                           <li class="section-description">University: N/A</li>
-                          </ul>
-                      </li>
-                      <li>
+                          <div class="achievements-heading">
+                            <li class="achievements-heading-text">Academic achievements in &laquo;Usum&raquo;:</li>
+                            <button class="info-expand-btn"><i class="fa-solid fa-angle-right"></i></button>
+                          </div>
+                          
+                        </ul>
+                    </li>
+                    <li class="extracurricular-ed">
                         <h2 class="education-heading">Extracurricular Education:</h2>
                         <ul class="education-areas">
-                          <li class="section-description">Musical school named after Gh. Saryan 2019-Present</li>
+                          <li class="section-description">Musical school named after Gh. Saryan(2019-Present)</li>
                           <li class="section-description">ACA JavaScript Profession Course</li>
-                          <!-- <li class="section-description"></li> -->
-                          </ul>
+                        </ul>
                       </li>
                   </ul>
                 `;
@@ -85,9 +89,6 @@ navBtns.forEach((btn, _, btnList) => {
                 </div>
               `;
           }
-          if(btn.textContent === "About Me") {
-
-          }
 
           btn.classList.add("active-btn");
 
@@ -98,6 +99,31 @@ navBtns.forEach((btn, _, btnList) => {
           document.querySelector(".section-content").innerHTML = `
               ${sectionHTML}
           `;
+
+          document.querySelectorAll(".info-expand-btn").forEach((btn, i, btnList) => {
+            btn.addEventListener("click", function() {
+              btn.classList.toggle("expanded-btn");
+
+              if(btn.classList.contains("expanded-btn")) {
+                btn.innerHTML = '<i class="fa-solid fa-angle-down"></i>';
+                document.querySelector(".education-areas").insertAdjacentHTML(
+                  "beforeend",
+                  `<ul class="achievements-list">
+                    <li class="achievement">9&times; Grade Graduation With Excellence&#127942;</li>
+                    <li class="achievement">6&times; First Place Achievement in Various Subjects&#129351;</li>
+                    <li class="achievement">4&times; Second Place from Achievement in Various Subjects&#129352;</li>
+                    <li class="achievement">3&times; Certificate of Participation in Various Academic Events</li>
+                    <li class="achievement">1&times; Certificate of Accomlishment in National English Olympics</li>
+                  </ul>`
+                );
+              } else {
+                btn.innerHTML = '<i class="fa-solid fa-angle-right"></i>';
+                document.querySelector(".education-areas").removeChild(document.querySelector(".achievements-list"));
+              }
+
+            })
+          })
       }
     });
 });
+
