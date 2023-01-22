@@ -1,6 +1,6 @@
 :root {
     --main-background-color: #1C1C1C;
-    --secondary-color: #666666;
+    --secondary-color: #191919;
     --active-el-color: #0099CC;
     --text-color: #FFFFFF;
 }
@@ -54,6 +54,7 @@ body {
     border: none;
     font-size: 22px;
     transition: 0.15s;
+    cursor: pointer;
 }
 
 .nav-btn:hover {
@@ -146,10 +147,6 @@ body {
     margin-bottom: 20px;
 }
 
-.education-heading {
-    font-size: 32px;
-}
-
 
 .current-date {
     text-decoration: underline;
@@ -179,16 +176,78 @@ body {
     color: var(--secondary-color)
 }
 
-.section-description,
-.link {
-    margin: 0;
-    font-size: 24px;
-};
+.formal-ed,
+.extracurricular-ed {
+    margin-top: 40px;
+}
+
+.education-heading {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.extracurricular-ed {
+    clear: left;
+}
 
 .education-areas {
     list-style-type: disc;
 }
 
 .education-areas > li {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.achievements-heading {
+    display: flex;
+    float: left;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.achievements-heading-text {
+    flex: 500px;
+    font-size: 24px;
+}
+
+.info-expand-btn {
+    background: rgb(78, 78, 78);
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s;
+    padding: 0 11px;
+    border-radius: 4px;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.info-expand-btn:hover {
+    background: rgb(46, 46, 46);
+}
+
+.info-expand-btn:active {
+    background: rgb(60, 60, 60);
+}
+
+.expanded-btn {
+    padding: 0 8px;
+    background: var(--active-el-color);
+    border: none;
+}
+
+.achievements-list {
+    clear: left;
+}
+
+.achievement {
+    margin: 30px 0;
     font-size: 22px;
 }
+
+.section-description,
+.link {
+    margin: 0;
+    font-size: 24px;
+};
