@@ -59,7 +59,7 @@ navBtns.forEach((btn, _, btnList) => {
             case "Projects":
               sectionHTML = `
                 <ul class="project-list">
-                  <li><a href="#" class="link">Portfolio Website(currently opened)</a></li>
+                  <li><a href="https://vardanyanzaven.github.io/Portfolio" class="link">Portfolio Website(currently opened)</a></li>
                   <li><a href="#" class="link">Carousel Slider</a></li>
                   <li><a href="#" class="link">To-do Application</a></li>
                   <li><a href="#" class="link">Tetris</a></li>
