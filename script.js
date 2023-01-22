@@ -114,6 +114,7 @@ navBtns.forEach((btn, _, btnList) => {
                     <li class="achievement">4&times; Second Place from Achievement in Various Subjects&#129352;</li>
                     <li class="achievement">3&times; Certificate of Participation in Various Academic Events</li>
                     <li class="achievement">1&times; Certificate of Accomlishment in National English Olympics</li>
+                    <li class="achievement">2&times; Sportsman of The Year for Achievements in Grappling and Brazilian jiu-jitsu</li>
                   </ul>`
                 );
               } else {
