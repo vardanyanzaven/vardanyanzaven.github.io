@@ -42,7 +42,6 @@ navBtns.forEach((btn, _, btnList) => {
                       <h2 class="education-heading">Formal Education:</h2>
                         <ul class="education-areas">
                           <li class="section-description">School: &laquo;Usum&raquo; Private School</li>
-                          <li class="section-description">University: N/A</li>
                           <div class="achievements-heading">
                             <li class="achievements-heading-text">Academic achievements in &laquo;Usum&raquo;:</li>
                             <button class="info-expand-btn"><i class="fa-solid fa-angle-right"></i></button>
